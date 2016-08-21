@@ -2,7 +2,7 @@
   "name": "angular-requirejs",
   "description": "A starter project for AngularJS RequireJS",
   "version": "1.0.0",
-  "homepage": "https://github.com/angular/angular-requireJS",
+  "homepage": "https://github.com/csrujanreddy/angular-requirejs",
   "license": "MIT",
   "private": true,
   "dependencies": {

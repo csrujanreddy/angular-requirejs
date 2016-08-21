@@ -3,16 +3,15 @@
   "private": true,
   "version": "1.0.0",
   "description": "A starter project for AngularJS and requirejs",
-  "repository": "https://github.com/angular/angular-seed",
+  "repository": "https://github.com/csrujanreddy/angular-requirejs",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.7.7",
-    "debug": "^2.2.0",
     "express": "^4.14.0"
   },
   "scripts": {
     "postinstall": "bower install",
     "prestart": "npm install",
-    "start": "http-server -a localhost -p 8000 -c-1 ./app"
+    "start": "npm server"
   }
 }

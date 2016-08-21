@@ -1,0 +1,35 @@
+<div class="well" ng-controller="RepeatController as rCtrl">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" ng-model="rCtrl.searchText" placeholder="Search">
+                </div>
+                <div class="col-xs-3">
+                    <select class="form-control" ng-model="rCtrl.orderBy">
+                        <option value="name">Name (Ascending)</option>
+                        <option value="-name">Name (Descending)</option>
+                        <option value="age">Age (Ascending)</option>
+                        <option value="-age">Age (Descending)</option>
+                    </select>
+                </div>
+            </div>
+            <table class="table">
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+                <tr ng-repeat="person in rCtrl.persons | filter: rCtrl.searchText | orderBy: rCtrl.orderBy">
+                    <td>{{$index+1}}</td>
+                    <td>{{person.name}}</td>
+                    <td>{{person.email}}</td>
+                    <td>{{person.age}}</td>
+                    <td>{{person.country}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

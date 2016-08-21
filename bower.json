@@ -1,0 +1,14 @@
+{
+  "name": "angular-requirejs",
+  "description": "A starter project for AngularJS RequireJS",
+  "version": "1.0.0",
+  "homepage": "https://github.com/angular/angular-requireJS",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "requirejs": "^2.2.0",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.7",
+    "angular-animate": "^1.5.8"
+  }
+}

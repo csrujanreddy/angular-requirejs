@@ -1,0 +1,24 @@
+.animate.ng-leave {
+    position: relative;
+}
+.animate.ng-enter {
+    position: absolute;
+}
+.animate.ng-enter, .animate.ng-leave {
+    -webkit-transition: -webkit-transform 0.3s ease-in, opacity 0.3s ease-in;
+    -moz-transition: -moz-transform 0.3s ease-in, opacity 0.3s ease-in;
+    -o-transition: -o-transform 0.3s ease-in, opacity 0.3s ease-in;
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+.animate.ng-enter, .animate.ng-leave.ng-leave-active {
+    -webkit-transform: scaleY(0.0001);
+    -o-transform: scaleY(0.0001);
+    transform: scaleY(0.0001);
+    opacity: 0;
+}
+.animate, .animate.ng-enter.ng-enter-active {
+    -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 1;
+}

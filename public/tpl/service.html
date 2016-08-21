@@ -1,0 +1,17 @@
+<div class="well">
+    <div class="row">
+        <!--Service controller 1-->
+        <div class="col-xs-6" ng-controller="ServiceController1 as ctrl1">
+            <h4>This is Service Controller 1 Scope</h4>
+            <input type="text" ng-model="ctrl1.shareService.name">
+        </div>
+
+        <!--Service controller 2-->
+        <div class="col-xs-6" ng-controller="ServiceController2 as ctrl2">
+            <h4>Service Controller 2 Scope</h4>
+            <input type="text" ng-model="ctrl2.shareService1.name">
+            {{ctrl2.shareService1.name}}
+        </div>
+
+    </div>
+</div>
